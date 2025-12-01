@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+    margin-inline: 8px;
+    margin-top: 8px;
+    width: auto;
+    height: 75px;
+    background-color: #fcd4d4;
+    align-content: center;
+}
+.nav-container{
+    margin-inline: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-container{
+    display: flex;
+    column-gap: 10px;
+    
+}
+
+.search-container input{
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+.search-container button{
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+}
+
+.search-container .close-button {
+    width: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.filter-container{
+    margin-inline: 25px;
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-container{
+    margin-inline: 8px;
+    background-color: #faebd7;
+    max-width: 100%;
+    height: auto;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-inline: 160px;
+    padding:30px 0;
+}
+
+.single-card{
+    border-radius: 8px;
+    max-width: 300px;
+    height: auto;
+    background-color: #f0f8ff;
+    padding: 10px;
+    box-shadow: 0 2px 4px;
+    margin-bottom: 40px;
+}
+.button-container{
+    display: flex;
+    justify-content: left;
+    column-gap: 12px;
+    padding: 5px 0;
+}
+.button{
+    color: white;
+    font-size: medium;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+.level-button{
+    background-color: rgb(78, 78, 255);
+}
+.dur-button{
+    background-color: green;
+}
+.type-button{
+    background-color: rgb(255, 39, 39);
+}
+.recipe-img{
+    width: 280px;
+    padding-top: 10px;
+}

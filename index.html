@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="recipe-app.css">
+</head>
+<body>
+    <nav >
+        <div class="nav-container">
+            <div style="align-content: center;">
+                <h3>Recipe App</h3>
+            </div>
+            <div class="search-container">
+                    <input type="text" placeholder="Search recipes...">
+            
+                    <button>Search</button>
+
+                    <button class="close-button" >X</button>
+            </div>
+        </div>
+    </nav>
+
+    <div  class="filter-container">
+        <div>
+            <h3>Check out these Recipes</h3>
+        </div>
+        <div>
+            <select style="padding: 5px 10px; border-radius: 10px;" name="" id="">
+                <option value="">All</option>   
+                <option value="">Veg</option>   
+                <option value="">Non Veg</option>   
+                <option value="">Easy</option>   
+                <option value="">Medium</option>   
+                <option value="">Hard</option>   
+            </select>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="cards">
+            <a href="recipes/1chicken-biryani.html">
+            <div class="single-card">
+                <h3 style="padding: 5px 0;">Chicken Biryani</h3>
+                <div class="button-container">
+                    <button class="level-button button">medium</button>
+                    <button class="dur-button button">45 - 60 min</button>
+                    <button class="type-button button">non-veg</button>
+                </div>
+                <img class="recipe-img" src="images/biriyani.png" alt="">
+            </div>
+            </a>
+
+            <a href="recipes/2Masala-dosa.html">
+            <div class="single-card">
+                <h3 style="padding: 5px 0;">Masala Dosa</h3>
+                <div style="display: flex;justify-content: left;column-gap: 12px; padding: 5px 0;">
+                    <button class="level-button button">easy</button>
+                    <button class="dur-button button">15 min</button>
+                    <button class="type-button button">veg</button>
+                </div>
+                <img class="recipe-img" src="./images/masaldosa.png" alt="">
+            </div>
+            </a>
+
+            <a href="recipes/3Idli.html">
+            <div class="single-card">
+                <h3 style="padding: 5px 0;">Idli</h3>
+                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;">
+                    <button class="level-button button">esy</button>
+                    <button class="dur-button button">15 min</button>
+                    <button class="type-button button">veg</button>
+                </div>
+                <img class="recipe-img" src="./images/idli.png" alt="">
+            </div>
+            </a>
+
+            <a href="recipes/4Chettinad-Chicken.html">
+            <div class="single-card">
+                <h3 style="padding: 5px 0;">Chettinad Chicken</h3>
+                <div style="display: flex;justify-content: left;column-gap: 12px; padding: 5px 0;">
+                    <button class="level-button button">medium</button>
+                    <button class="dur-button button">30 min</button>
+                    <button class="type-button button">non-veg</button>
+                </div>
+                <img class="recipe-img" src="./images/Chettinad-Chicken.png" alt="">
+            </div>
+            </a>
+
+            <a href="recipes/5Kothu-Parotta.html">
+            <div class="single-card">
+                <h3 style="padding: 5px 0;">Kothu Parotta</h3>
+                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;">
+                    <button class="level-button button">medium</button>
+                    <button class="dur-button button">60 min</button>
+                    <button class="type-button button">veg</button>
+                </div>
+                <img class="recipe-img" src="./images/Kothu-Parotta.png" alt="">
+            </div>
+            </a>
+
+            <a href="recipes/6Puliyodarai.html">
+            <div class="single-card">
+                <h3 style="padding: 5px 0;">Puliyodarai (Tamarind Rice)</h3>
+                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;">
+                    <button class="level-button button">easy</button>
+                    <button class="dur-button button">25 min</button>
+                    <button class="type-button button">veg</button>
+                </div>
+                <img class="recipe-img" src="./images/Puliyodarai.png" alt="">
+            </div>
+            </a>
+
+            <a href="recipes/7Paneer.html">
+            <div class="single-card">
+                <h3 style="padding: 5px 0;">Paneer Butter Masala</h3>
+                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;">
+                    <button class="level-button button">medium</button>
+                    <button class="dur-button button">40 min</button>
+                    <button class="type-button button">veg</button>
+                </div>
+                <img class="recipe-img" src="./images/Paneer-Butter.png" alt="">
+            </div>
+            </a>
+
+            <a href="recipes/8Paniyaram.html">
+            <div class="single-card">
+                <h3 style="padding: 5px 0;">Paniyaram</h3>
+                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;">
+                    <button class="level-button button">medium</button>
+                    <button class="dur-button button">45 min</button>
+                    <button class="type-button button">veg</button>
+                </div>
+                <img class="recipe-img" src="./images/Paniyaram.png" alt="">
+            </div>
+            </a>
+
+            <a href="recipes/9Grill.html">
+            <div class="single-card">
+                <h3 style="padding: 5px 0;">Grilled Tandoori Chicken</h3>
+                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;">
+                    <button class="level-button button">medium</button>
+                    <button class="dur-button button">1 hour</button>
+                    <button class="type-button button">non-veg</button>
+                </div>
+                <img class="recipe-img" src="./images/grill.png" alt="">
+            </div>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
