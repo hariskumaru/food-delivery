@@ -111,6 +111,26 @@ nav{
 }
 
 
+@media screen and (max-width: 992px){
+    .nav-container {
+        margin-inline: 20px;
+    }
+    .filter-container {
+        margin-inline: 20px;
+    }
+    .cards {
+        margin-inline: 40px;
+        justify-content: space-evenly;
+        gap: 20px;
+    }
+    
+    .recipe-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
 
 @media screen and (max-width:600px) {
     nav {

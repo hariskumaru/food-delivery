@@ -77,3 +77,79 @@ body img{
 .instr-container ol{
     margin:5px 0 40px 40px;
 }
+
+
+@media screen and (max-width: 992px){
+    body {
+        margin-inline: 80px;  
+        margin-top: 15px;
+    }
+    .heading h3 {
+        font-size: 22px;
+    }
+    .add-to-fav p {
+        font-size: 18px;
+    }
+    body img {
+        height: 320px;
+        border-radius: 12px;
+    }
+    .button-container {
+        flex-wrap: wrap;
+        row-gap: 10px;
+    }
+    .button {
+        font-size: 14px;
+        padding: 7px 9px;
+    }
+    .ingredients-container button {
+        font-size: 13px;
+        padding: 6px 7px;
+    }
+    .instr-container ol {
+        margin-left: 30px;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+     body {
+        margin-inline: 12px;
+        margin-top: 12px;
+    }
+    .heading {
+        flex-direction: column;
+        row-gap: 6px;
+    }
+    .heading h3 {
+        font-size: 20px;
+    }
+    .add-to-fav p {
+        font-size: 18px;
+    }
+    body img {
+        height: auto;
+        max-height: 300px;
+        border-radius: 10px;
+    }
+    .button-container {
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+    .button {
+        font-size: small;
+        padding: 6px 8px;
+    }
+    .ingredients-container {
+        gap: 6px;
+    }
+    .ingredients-container button {
+        font-size: 12px;
+        padding: 5px 6px;
+    }
+    .instr-container ol {
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+}
+
