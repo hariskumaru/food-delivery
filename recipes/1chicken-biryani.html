@@ -4,47 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chicken Biryani</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <div class="goback">
-        <a href="/index.html">Go Back</a>
+<body class="m-0 p-0 box-border mt-3 lg:mt-5 mx-3 lg:mx-20 xl:mx-[275px]">
+    <div class="mb-2.5">
+        <a href="/index.html" class="no-underline text-black hover:text-blue-600">Go Back</a>
     </div>
-    <div class="heading">
-         <h3>Chicken Biryani</h3>
-         <div class="add-to-fav">
-            <p>+ Add to Favorites</p>
+    
+    <div class="flex flex-col lg:flex-row justify-between gap-1.5 lg:gap-0 mb-2.5">
+         <h3 class="text-xl lg:text-2xl font-bold">Chicken Biryani</h3>
+         <div>
+            <p class="text-lg lg:text-[22px] text-red-600 cursor-pointer hover:text-red-700">+ Add to Favorites</p>
          </div>
     </div>
-    <img src="/images/biriyani.png" alt="">
+    
+    <img src="/images/biriyani.png" alt="Chicken Biryani" class="my-2.5 w-full h-auto max-h-[300px] lg:max-h-[320px] xl:h-[400px] rounded-[10px] lg:rounded-xl xl:rounded-2xl object-cover">
 
-    <div class="button-container">
-        <button class="button level-button">medium</button>
-        <button class="button dur-button">45 - 60 min</button>
-        <button class="button type-button">non-veg</button>
+    <div class="flex justify-start flex-wrap gap-2 lg:gap-2.5 xl:gap-3 py-1">
+        <button class="text-white text-sm lg:text-base py-1.5 lg:py-2 px-2 lg:px-2.5 border-none rounded-md bg-blue-600">medium</button>
+        <button class="text-white text-sm lg:text-base py-1.5 lg:py-2 px-2 lg:px-2.5 border-none rounded-md bg-green-600">45 - 60 min</button>
+        <button class="text-white text-sm lg:text-base py-1.5 lg:py-2 px-2 lg:px-2.5 border-none rounded-md bg-red-600">non-veg</button>
     </div>
 
-    <div class="ingredients-container">
-        <button>2 cups basmati rice</button>
-        <button>500 grams chicken, cut into pieces</button>
-        <button>2 onions, thinly sliced</button>
-        <button>2 tomatoes, chopped</button>
-        <button>2 green chilies, slit</button>
-        <button>2 teaspoons ginger-garlic paste</button>
-        <button>1/2 cup yogurt</button>
-        <button>1 teaspoon red chili powder</button>
-        <button>1/2 teaspoon turmeric powder</button>
-        <button>1 teaspoon biryani masala powder</button>
-        <button>A pinch of saffron strands, soaked in warm milk</button>
-        <button>A few mint leaves</button>
-        <button>A few coriander leaves</button>
-        <button>Salt to taste</button>
-        <button>Oil or ghee for cooking</button>
-        <button>Whole spices (cinnamon stick, cloves, cardamom pods, bay leaves)</button>
+    <div class="flex flex-wrap gap-1.5 lg:gap-2.5 my-2.5">
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">2 cups basmati rice</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">500 grams chicken, cut into pieces</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">2 onions, thinly sliced</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">2 tomatoes, chopped</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">2 green chilies, slit</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">2 teaspoons ginger-garlic paste</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">1/2 cup yogurt</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">1 teaspoon red chili powder</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">1/2 teaspoon turmeric powder</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">1 teaspoon biryani masala powder</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">A pinch of saffron strands, soaked in warm milk</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">A few mint leaves</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">A few coriander leaves</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">Salt to taste</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">Oil or ghee for cooking</button>
+        <button class="w-auto h-auto py-1 lg:py-1.5 px-1.5 lg:px-2 text-xs lg:text-sm bg-gray-400 border-none rounded-md hover:bg-gray-500">Whole spices (cinnamon stick, cloves, cardamom pods, bay leaves)</button>
     </div>
-    <div class="instr-container">
-        <h3>Instructions</h3>
-        <ol>
+    
+    <div class="my-2.5">
+        <h3 class="py-2.5 text-xl font-bold">Instructions</h3>
+        <ol class="my-1.5 ml-5 lg:ml-8 xl:ml-10 mb-8 lg:mb-10 list-decimal space-y-2">
             <li>Wash and soak basmati rice in water for 30 minutes. Drain the water.</li>
             <li>Heat oil or ghee in a pan and add whole spices. Sauté for a minute until aromatic.</li>
             <li>Add thinly sliced onions and cook until golden brown.</li>

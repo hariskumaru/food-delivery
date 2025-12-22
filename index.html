@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe App</title>
-    <link rel="stylesheet" href="recipe-app.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <nav >
-        <div class="nav-container">
-            <div style="align-content: center;">
-                <h3>Recipe App</h3>
+<body class="m-0 p-0 box-border">
+    <nav class="mx-2 mt-2 h-auto lg:h-[75px] bg-[#fcd4d4] flex items-center py-2 lg:py-0">
+        <div class="mx-3 w-full flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-0">
+            <div class="flex items-center">
+                <h3 class="text-xl font-bold">Recipe App</h3>
             </div>
-            <div class="search-container">
-                    <input type="text" placeholder="Search recipes...">
-                    <button>Search</button>
-                    <button class="close-button" >X</button>
+            <div class="flex flex-wrap justify-center gap-2 w-full lg:w-auto">
+                <input type="text" placeholder="Search recipes..." class="h-10 px-2.5 rounded-md border-none w-full lg:w-64 bg-white">
+                <button class="h-10 px-2.5 text-center rounded-md border-none bg-green-600 text-white hover:bg-green-700">Search</button>
+                <button class="w-10 h-10 bg-red-600 text-white rounded-full border-none hover:bg-red-700">X</button>
             </div>
         </div>
     </nav>
 
-    <div  class="filter-container">
+    <div class="mx-6 mt-5 flex flex-col lg:flex-row justify-between items-center gap-2 lg:gap-0 text-center lg:text-left">
         <div>
-            <h3>Check out these Recipes</h3>
+            <h3 class="text-xl font-bold">Check out these Recipes</h3>
         </div>
         <div>
-            <select style="padding: 5px 10px; border-radius: 10px;" name="" id="">
+            <select class="py-1 px-2.5 rounded-lg border border-gray-300">
                 <option value="">All</option>   
                 <option value="">Veg</option>   
                 <option value="">Non Veg</option>   
@@ -36,114 +36,114 @@
         </div>
     </div>
 
-    <div class="main-container">
-        <div class="cards">
-            <a href="recipes/1chicken-biryani.html">
-            <div class="single-card">
-                <h3 style="padding: 5px 0;">Chicken Biryani</h3>
-                <div class="button-container">
-                    <button class="level-button button">medium</button>
-                    <button class="dur-button button">45 - 60 min</button>
-                    <button class="type-button button">non-veg</button>
+    <div class="mx-2 bg-[#faebd7] w-auto min-h-screen py-2.5">
+        <div class="flex justify-center lg:justify-between flex-wrap mx-2.5 lg:mx-40 py-8 gap-5 lg:gap-0">
+            <a href="recipes/1chicken-biryani.html" class="no-underline text-black">
+                <div class="rounded-lg w-full sm:w-72 lg:w-[300px] h-auto bg-[#f0f8ff] p-2.5 shadow-md mb-10 hover:shadow-lg transition-shadow">
+                    <h3 class="py-1 font-semibold">Chicken Biryani</h3>
+                    <div class="flex justify-start flex-wrap gap-3 py-1">
+                        <button class="bg-blue-600 text-white text-base py-2 px-2 border-none rounded-md">medium</button>
+                        <button class="bg-green-600 text-white text-base py-2 px-2 border-none rounded-md">45 - 60 min</button>
+                        <button class="bg-red-600 text-white text-base py-2 px-2 border-none rounded-md">non-veg</button>
+                    </div>
+                    <img class="w-full pt-2.5" src="images/biriyani.png" alt="Chicken Biryani">
                 </div>
-                <img class="recipe-img" src="images/biriyani.png" alt="">
-            </div>
             </a>
 
-            <a href="recipes/2Masala-dosa.html">
-            <div class="single-card">
-                <h3 style="padding: 5px 0;">Masala Dosa</h3>
-                <div style="display: flex;justify-content: left;column-gap: 12px; padding: 5px 0; " class="button-container">
-                    <button class="level-button button">easy</button>
-                    <button class="dur-button button">15 min</button>
-                    <button class="type-button button">veg</button>
+            <a href="recipes/2Masala-dosa.html" class="no-underline text-black">
+                <div class="rounded-lg w-full sm:w-72 lg:w-[300px] h-auto bg-[#f0f8ff] p-2.5 shadow-md mb-10 hover:shadow-lg transition-shadow">
+                    <h3 class="py-1 font-semibold">Masala Dosa</h3>
+                    <div class="flex justify-start flex-wrap gap-3 py-1">
+                        <button class="bg-blue-600 text-white text-base py-2 px-2 border-none rounded-md">easy</button>
+                        <button class="bg-green-600 text-white text-base py-2 px-2 border-none rounded-md">15 min</button>
+                        <button class="bg-red-600 text-white text-base py-2 px-2 border-none rounded-md">veg</button>
+                    </div>
+                    <img class="w-full pt-2.5" src="./images/masaldosa.png" alt="Masala Dosa">
                 </div>
-                <img class="recipe-img" src="./images/masaldosa.png" alt="">
-            </div>
             </a>
 
-            <a href="recipes/3Idli.html">
-            <div class="single-card">
-                <h3 style="padding: 5px 0;">Idli</h3>
-                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;" class="button-container">
-                    <button class="level-button button">easy</button>
-                    <button class="dur-button button">15 min</button>
-                    <button class="type-button button">veg</button>
+            <a href="recipes/3Idli.html" class="no-underline text-black">
+                <div class="rounded-lg w-full sm:w-72 lg:w-[300px] h-auto bg-[#f0f8ff] p-2.5 shadow-md mb-10 hover:shadow-lg transition-shadow">
+                    <h3 class="py-1 font-semibold">Idli</h3>
+                    <div class="flex justify-start flex-wrap gap-3 py-1">
+                        <button class="bg-blue-600 text-white text-base py-2 px-2 border-none rounded-md">easy</button>
+                        <button class="bg-green-600 text-white text-base py-2 px-2 border-none rounded-md">15 min</button>
+                        <button class="bg-red-600 text-white text-base py-2 px-2 border-none rounded-md">veg</button>
+                    </div>
+                    <img class="w-full pt-2.5" src="./images/idli.png" alt="Idli">
                 </div>
-                <img class="recipe-img" src="./images/idli.png" alt="">
-            </div>
             </a>
 
-            <a href="recipes/4Chettinad-Chicken.html">
-            <div class="single-card">
-                <h3 style="padding: 5px 0;">Chettinad Chicken</h3>
-                <div style="display: flex;justify-content: left;column-gap: 12px; padding: 5px 0;" class="button-container">
-                    <button class="level-button button">medium</button>
-                    <button class="dur-button button">30 min</button>
-                    <button class="type-button button">non-veg</button>
+            <a href="recipes/4Chettinad-Chicken.html" class="no-underline text-black">
+                <div class="rounded-lg w-full sm:w-72 lg:w-[300px] h-auto bg-[#f0f8ff] p-2.5 shadow-md mb-10 hover:shadow-lg transition-shadow">
+                    <h3 class="py-1 font-semibold">Chettinad Chicken</h3>
+                    <div class="flex justify-start flex-wrap gap-3 py-1">
+                        <button class="bg-blue-600 text-white text-base py-2 px-2 border-none rounded-md">medium</button>
+                        <button class="bg-green-600 text-white text-base py-2 px-2 border-none rounded-md">30 min</button>
+                        <button class="bg-red-600 text-white text-base py-2 px-2 border-none rounded-md">non-veg</button>
+                    </div>
+                    <img class="w-full pt-2.5" src="./images/Chettinad-Chicken.png" alt="Chettinad Chicken">
                 </div>
-                <img class="recipe-img" src="./images/Chettinad-Chicken.png" alt="">
-            </div>
             </a>
 
-            <a href="recipes/5Kothu-Parotta.html">
-            <div class="single-card">
-                <h3 style="padding: 5px 0;">Kothu Parotta</h3>
-                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;" class="button-container">
-                    <button class="level-button button">medium</button>
-                    <button class="dur-button button">60 min</button>
-                    <button class="type-button button">veg</button>
+            <a href="recipes/5Kothu-Parotta.html" class="no-underline text-black">
+                <div class="rounded-lg w-full sm:w-72 lg:w-[300px] h-auto bg-[#f0f8ff] p-2.5 shadow-md mb-10 hover:shadow-lg transition-shadow">
+                    <h3 class="py-1 font-semibold">Kothu Parotta</h3>
+                    <div class="flex justify-start flex-wrap gap-3 py-1">
+                        <button class="bg-blue-600 text-white text-base py-2 px-2 border-none rounded-md">medium</button>
+                        <button class="bg-green-600 text-white text-base py-2 px-2 border-none rounded-md">60 min</button>
+                        <button class="bg-red-600 text-white text-base py-2 px-2 border-none rounded-md">veg</button>
+                    </div>
+                    <img class="w-full pt-2.5" src="./images/Kothu-Parotta.png" alt="Kothu Parotta">
                 </div>
-                <img class="recipe-img" src="./images/Kothu-Parotta.png" alt="">
-            </div>
             </a>
 
-            <a href="recipes/6Puliyodarai.html">
-            <div class="single-card">
-                <h3 style="padding: 5px 0;">Puliyodarai (Tamarind Rice)</h3>
-                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;" class="button-container">
-                    <button class="level-button button">easy</button>
-                    <button class="dur-button button">25 min</button>
-                    <button class="type-button button">veg</button>
+            <a href="recipes/6Puliyodarai.html" class="no-underline text-black">
+                <div class="rounded-lg w-full sm:w-72 lg:w-[300px] h-auto bg-[#f0f8ff] p-2.5 shadow-md mb-10 hover:shadow-lg transition-shadow">
+                    <h3 class="py-1 font-semibold">Puliyodarai (Tamarind Rice)</h3>
+                    <div class="flex justify-start flex-wrap gap-3 py-1">
+                        <button class="bg-blue-600 text-white text-base py-2 px-2 border-none rounded-md">easy</button>
+                        <button class="bg-green-600 text-white text-base py-2 px-2 border-none rounded-md">25 min</button>
+                        <button class="bg-red-600 text-white text-base py-2 px-2 border-none rounded-md">veg</button>
+                    </div>
+                    <img class="w-full pt-2.5" src="./images/Puliyodarai.png" alt="Puliyodarai">
                 </div>
-                <img class="recipe-img" src="./images/Puliyodarai.png" alt="">
-            </div>
             </a>
 
-            <a href="recipes/7Paneer.html">
-            <div class="single-card">
-                <h3 style="padding: 5px 0;">Paneer Butter Masala</h3>
-                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;" class="button-container">
-                    <button class="level-button button">medium</button>
-                    <button class="dur-button button">40 min</button>
-                    <button class="type-button button">veg</button>
+            <a href="recipes/7Paneer.html" class="no-underline text-black">
+                <div class="rounded-lg w-full sm:w-72 lg:w-[300px] h-auto bg-[#f0f8ff] p-2.5 shadow-md mb-10 hover:shadow-lg transition-shadow">
+                    <h3 class="py-1 font-semibold">Paneer Butter Masala</h3>
+                    <div class="flex justify-start flex-wrap gap-3 py-1">
+                        <button class="bg-blue-600 text-white text-base py-2 px-2 border-none rounded-md">medium</button>
+                        <button class="bg-green-600 text-white text-base py-2 px-2 border-none rounded-md">40 min</button>
+                        <button class="bg-red-600 text-white text-base py-2 px-2 border-none rounded-md">veg</button>
+                    </div>
+                    <img class="w-full pt-2.5" src="./images/Paneer-Butter.png" alt="Paneer Butter Masala">
                 </div>
-                <img class="recipe-img" src="./images/Paneer-Butter.png" alt="">
-            </div>
             </a>
 
-            <a href="recipes/8Paniyaram.html">
-            <div class="single-card">
-                <h3 style="padding: 5px 0;">Paniyaram</h3>
-                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;" class="button-container">
-                    <button class="level-button button">medium</button>
-                    <button class="dur-button button">45 min</button>
-                    <button class="type-button button">veg</button>
+            <a href="recipes/8Paniyaram.html" class="no-underline text-black">
+                <div class="rounded-lg w-full sm:w-72 lg:w-[300px] h-auto bg-[#f0f8ff] p-2.5 shadow-md mb-10 hover:shadow-lg transition-shadow">
+                    <h3 class="py-1 font-semibold">Paniyaram</h3>
+                    <div class="flex justify-start flex-wrap gap-3 py-1">
+                        <button class="bg-blue-600 text-white text-base py-2 px-2 border-none rounded-md">medium</button>
+                        <button class="bg-green-600 text-white text-base py-2 px-2 border-none rounded-md">45 min</button>
+                        <button class="bg-red-600 text-white text-base py-2 px-2 border-none rounded-md">veg</button>
+                    </div>
+                    <img class="w-full pt-2.5" src="./images/Paniyaram.png" alt="Paniyaram">
                 </div>
-                <img class="recipe-img" src="./images/Paniyaram.png" alt="">
-            </div>
             </a>
 
-            <a href="recipes/9Grill.html">
-            <div class="single-card">
-                <h3 style="padding: 5px 0;">Grilled Tandoori Chicken</h3>
-                <div style="display: flex;justify-content: left;column-gap: 12px;padding: 5px 0;" class="button-container">
-                    <button class="level-button button">medium</button>
-                    <button class="dur-button button">1 hour</button>
-                    <button class="type-button button">non-veg</button>
+            <a href="recipes/9Grill.html" class="no-underline text-black">
+                <div class="rounded-lg w-full sm:w-72 lg:w-[300px] h-auto bg-[#f0f8ff] p-2.5 shadow-md mb-10 hover:shadow-lg transition-shadow">
+                    <h3 class="py-1 font-semibold">Grilled Tandoori Chicken</h3>
+                    <div class="flex justify-start flex-wrap gap-3 py-1">
+                        <button class="bg-blue-600 text-white text-base py-2 px-2 border-none rounded-md">medium</button>
+                        <button class="bg-green-600 text-white text-base py-2 px-2 border-none rounded-md">1 hour</button>
+                        <button class="bg-red-600 text-white text-base py-2 px-2 border-none rounded-md">non-veg</button>
+                    </div>
+                    <img class="w-full pt-2.5" src="./images/grill.png" alt="Grilled Tandoori Chicken">
                 </div>
-                <img class="recipe-img" src="./images/grill.png" alt="">
-            </div>
             </a>
         </div>
     </div>
